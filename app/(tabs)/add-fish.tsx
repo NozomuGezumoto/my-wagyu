@@ -1,10 +1,10 @@
 import { View, StyleSheet } from 'react-native';
-import WagyuMapScreen from '../../src/components/WagyuMapScreen';
+import AddFishScreen from '../../src/components/AddFishScreen';
 
-export default function HomeScreen() {
+export default function AddFishRoute() {
   return (
     <View style={styles.container}>
-      <WagyuMapScreen />
+      <AddFishScreen />
     </View>
   );
 }

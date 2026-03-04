@@ -1,0 +1,10 @@
+[
+  {"sourceId": "hokkaido_pref", "fish": "サケ", "months": [9, 10, 11]},
+  {"sourceId": "hokkaido_pref", "fish": "ホッケ", "months": [7, 8, 9, 10]},
+  {"sourceId": "hokkaido_pref", "fish": "スケソウダラ", "months": [1, 2, 3, 11, 12]},
+  {"sourceId": "hokkaido_pref", "fish": "ホタテ", "months": [3, 4, 5, 6]},
+  {"sourceId": "iwanai", "fish": "サケ", "months": [9, 10]},
+  {"sourceId": "iwanai", "fish": "ホッケ", "months": [7, 8, 9]},
+  {"sourceId": "takatsuki_hokkaido", "fish": "秋鮭", "months": [9]},
+  {"sourceId": "takatsuki_hokkaido", "fish": "バフンウニ", "months": [4]}
+]

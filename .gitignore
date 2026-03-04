@@ -3,6 +3,14 @@ data/raw/*.pbf
 data/raw/*.osm
 data/raw/*.o5m
 
+# Dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+
 # Temporary files
 *.tmp
 *.bak
@@ -12,6 +20,8 @@ __pycache__/
 *.pyc
 *.pyo
 .env
+.env.*
+!.env.example
 
 # IDE
 .vscode/

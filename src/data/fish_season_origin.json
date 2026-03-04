@@ -1,0 +1,293 @@
+{
+  "generatedAt": "2026-03-02T13:08:43.993047+00:00",
+  "species": [
+    {
+      "name": "アワビ",
+      "aliases": [
+        "あわび",
+        "鮑"
+      ]
+    },
+    {
+      "name": "イカ",
+      "aliases": [
+        "いか",
+        "烏賊",
+        "スルメイカ",
+        "アオリイカ",
+        "ヤリイカ"
+      ]
+    },
+    {
+      "name": "ウニ",
+      "season": [
+        {
+          "months": [
+            4
+          ],
+          "region": "北",
+          "source": "高槻商店（北海道日高）旬の魚カレンダー",
+          "sourceUrl": "https://www.takatsuki-shoten.co.jp/calendar.html"
+        }
+      ],
+      "aliases": [
+        "うに",
+        "エゾバフンウニ",
+        "バフンウニ",
+        "雲丹"
+      ]
+    },
+    {
+      "name": "エビ",
+      "aliases": [
+        "えび",
+        "海老",
+        "クルマエビ",
+        "タラバエビ"
+      ]
+    },
+    {
+      "name": "カツオ",
+      "aliases": [
+        "かつお",
+        "鰹"
+      ]
+    },
+    {
+      "name": "ゴマサバ",
+      "aliases": [
+        "ごまさば",
+        "ゴマ鯖"
+      ]
+    },
+    {
+      "name": "サケ",
+      "season": [
+        {
+          "months": [
+            9,
+            10,
+            11
+          ],
+          "region": "北",
+          "source": "北海道お魚図鑑（北海道庁）",
+          "sourceUrl": "https://www.pref.hokkaido.lg.jp/sr/gid/sr_ske_index.html"
+        },
+        {
+          "months": [
+            9,
+            10
+          ],
+          "region": "北",
+          "source": "岩内町 魚カレンダー",
+          "sourceUrl": "https://www.iwanai-kanko.org/?page_id=1089"
+        },
+        {
+          "months": [
+            9
+          ],
+          "region": "北",
+          "source": "高槻商店（北海道日高）旬の魚カレンダー",
+          "sourceUrl": "https://www.takatsuki-shoten.co.jp/calendar.html"
+        }
+      ],
+      "aliases": [
+        "しゃけ",
+        "アキサケ",
+        "秋鮭",
+        "鮭"
+      ]
+    },
+    {
+      "name": "サンマ",
+      "aliases": [
+        "秋刀魚",
+        "さんま"
+      ]
+    },
+    {
+      "name": "スケソウダラ",
+      "season": [
+        {
+          "months": [
+            1,
+            2,
+            3,
+            11,
+            12
+          ],
+          "region": "北",
+          "source": "北海道お魚図鑑（北海道庁）",
+          "sourceUrl": "https://www.pref.hokkaido.lg.jp/sr/gid/sr_ske_index.html"
+        }
+      ],
+      "aliases": [
+        "すけそうだら",
+        "たら",
+        "スケソウ",
+        "助宗鱈"
+      ]
+    },
+    {
+      "name": "タコ",
+      "aliases": [
+        "たこ",
+        "蛸",
+        "マダコ"
+      ]
+    },
+    {
+      "name": "ヒラメ",
+      "aliases": [
+        "ひらめ",
+        "平目"
+      ]
+    },
+    {
+      "name": "ブリ",
+      "aliases": [
+        "ぶり",
+        "鰤"
+      ]
+    },
+    {
+      "name": "ホタテ",
+      "season": [
+        {
+          "months": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "region": "北",
+          "source": "北海道お魚図鑑（北海道庁）",
+          "sourceUrl": "https://www.pref.hokkaido.lg.jp/sr/gid/sr_ske_index.html"
+        }
+      ],
+      "aliases": [
+        "ほたて",
+        "ホタテガイ",
+        "帆立"
+      ]
+    },
+    {
+      "name": "ホッケ",
+      "season": [
+        {
+          "months": [
+            7,
+            8,
+            9,
+            10
+          ],
+          "region": "北",
+          "source": "北海道お魚図鑑（北海道庁）",
+          "sourceUrl": "https://www.pref.hokkaido.lg.jp/sr/gid/sr_ske_index.html"
+        },
+        {
+          "months": [
+            7,
+            8,
+            9
+          ],
+          "region": "北",
+          "source": "岩内町 魚カレンダー",
+          "sourceUrl": "https://www.iwanai-kanko.org/?page_id=1089"
+        }
+      ],
+      "aliases": [
+        "ほっけ",
+        "姥鯲"
+      ]
+    },
+    {
+      "name": "マアジ",
+      "aliases": [
+        "真あじ",
+        "まあじ",
+        "真アジ",
+        "マアジ類"
+      ]
+    },
+    {
+      "name": "マイワシ",
+      "aliases": [
+        "真いわし",
+        "まいわし",
+        "イワシ",
+        "いわし"
+      ]
+    },
+    {
+      "name": "マグロ",
+      "aliases": [
+        "マグロ類",
+        "本マグロ",
+        "クロマグロ",
+        "メバチ",
+        "キハダ"
+      ]
+    },
+    {
+      "name": "マサバ",
+      "aliases": [
+        "真鯖",
+        "まさば",
+        "サバ",
+        "サバ類"
+      ]
+    },
+    {
+      "name": "マス",
+      "aliases": [
+        "ます",
+        "鱒",
+        "サクラマス",
+        "カラフトマス",
+        "ニジマス"
+      ]
+    },
+    {
+      "name": "マダイ",
+      "aliases": [
+        "真鯛",
+        "まだい",
+        "鯛",
+        "タイ"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "title": "海面漁業生産統計調査（農林水産省）",
+      "url": "https://www.maff.go.jp/j/tokei/kouhyou/kaimen_gyosei/",
+      "description": "全国・都道府県別の魚種別漁獲量。旬・産地の参考。"
+    },
+    {
+      "title": "漁業産出額統計（e-Stat 政府統計の総合窓口）",
+      "url": "https://www.e-stat.go.jp/stat-search?page=1&query=%E6%BC%81%E6%A5%AD",
+      "description": "全国・都道府県別の魚種別漁業産出額。名産地の参考。"
+    },
+    {
+      "title": "水産庁（農林水産省）",
+      "url": "https://www.jfa.maff.go.jp/",
+      "description": "水産施策・統計。全国の漁業・養殖業の概要。"
+    },
+    {
+      "title": "北海道お魚図鑑（北海道庁）",
+      "url": "https://www.pref.hokkaido.lg.jp/sr/gid/sr_ske_index.html",
+      "description": "地域別旬の参考（北海道・北日本）。"
+    },
+    {
+      "title": "岩内町 魚カレンダー",
+      "url": "https://www.iwanai-kanko.org/?page_id=1089",
+      "description": "地域別旬の参考（北海道）。"
+    },
+    {
+      "title": "高槻商店（北海道日高）旬の魚カレンダー",
+      "url": "https://www.takatsuki-shoten.co.jp/calendar.html",
+      "description": "地域別旬の参考（北海道日高）。"
+    }
+  ]
+}

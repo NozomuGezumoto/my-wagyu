@@ -1,28 +1,30 @@
 {
   "expo": {
-    "name": "My Sushi",
-    "slug": "my-sushi",
+    "name": "全国ブランド牛制覇",
+    "slug": "project-my-wagyu",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "mysushi",
+    "icon": "./assets/icon-wagyu.png",
+    "scheme": "mywagyu",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "splash": {
       "image": "./assets/images/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#f97316"
+      "backgroundColor": "#6B2D2D"
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.mysushi.app"
+      "bundleIdentifier": "com.mywagyu.app",
+      "buildNumber": "1"
     },
     "android": {
+      "versionCode": 1,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/icon.png",
-        "backgroundColor": "#f97316"
+        "foregroundImage": "./assets/icon-wagyu.png",
+        "backgroundColor": "#6B2D2D"
       },
-      "package": "com.mysushi.app",
+      "package": "com.mywagyu.app",
       "config": {
         "googleMaps": {
           "apiKey": "YOUR_GOOGLE_MAPS_API_KEY"

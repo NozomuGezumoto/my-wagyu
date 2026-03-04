@@ -47,6 +47,65 @@ export const SUSHI_COLORS = {
   borderLight: 'rgba(0, 0, 0, 0.04)',
 };
 
+// 全国ブランド牛制覇用 - ダーク×ゴールド（背景は重くない暗めのグレー）
+export const WAGYU_COLORS = {
+  primary: '#D4AF37',
+  primaryLight: '#E5C76B',
+  primaryDark: '#242424',
+  accent: '#D4AF37',
+  accentSecondary: '#B8860B',
+  accentTertiary: '#E5C76B',
+  background: '#1a1a1a',
+  backgroundElevated: '#222222',
+  surface: '#262626',
+  surfaceLight: '#2e2e2e',
+  textPrimary: '#fafafa',
+  textSecondary: '#b5b5b5',
+  textMuted: '#787878',
+  success: '#22c55e',
+  warning: '#D4AF37',
+  error: '#ef4444',
+  border: 'rgba(255, 255, 255, 0.06)',
+  borderLight: 'rgba(255, 255, 255, 0.03)',
+  pin: '#242424',
+  pinGold: '#D4AF37',
+  /** ピン内側（アイコン背景） */
+  pinInner: '#1c1c1c',
+  /** ピン内の星アイコン用（金よりやや明るいゴールドで差別化） */
+  pinStar: '#E8C547',
+  /** 地図ピン 4段階: S1 ブロンズ枠 */
+  pinBronze: '#B08D57',
+  /** 地図ピン 4段階: S2 シルバー枠（落ち着いた銀） */
+  pinSilver: '#A8A8A8',
+  /** 地図ピン 白枠（S0 未達成） */
+  pinWhite: '#f0f0f0',
+};
+
+/** ダークテーマ用シャドウ（控えめで洗練） */
+export const WAGYU_SHADOWS = {
+  card: {
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.28,
+    shadowRadius: 8,
+    elevation: 6,
+  },
+  cardStrong: {
+    shadowColor: '#D4AF37',
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 0.12,
+    shadowRadius: 12,
+    elevation: 10,
+  },
+  header: {
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.35,
+    shadowRadius: 6,
+    elevation: 6,
+  },
+};
+
 export const TOKYO_CENTER = {
   latitude: 35.6762,
   longitude: 139.6503,
@@ -74,6 +133,7 @@ export const JAPAN_INITIAL_REGION = {
 
 export const PIN_SIZE = {
   marker: 44,
+  markerS3: 46,
   cluster: 48,
 };
 

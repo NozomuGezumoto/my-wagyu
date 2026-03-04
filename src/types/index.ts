@@ -54,3 +54,117 @@ export const PREFECTURES = [
 ] as const;
 
 export type Prefecture = typeof PREFECTURES[number];
+
+// ============================================
+// Fish species: 名産地（都道府県）・旬（月）
+// データ取得パイプライン（e-Stat / 旬カレンダー）の成果物用
+// ============================================
+
+/** 地域タグ（旬のソース分類）北/東/西/南 */
+export type SeasonRegion = '北' | '東' | '西' | '南';
+
+/** 魚種ごとの名産地（都道府県 Top3〜5） */
+export interface FamousOrigin {
+  /** 都道府県名の配列（数量順） */
+  prefectures: string[];
+  /** 集計年（例: 2023）または "2021-2023" のような範囲 */
+  surveyYear: string;
+  /** 出典: e-Stat 表名など */
+  source: string;
+  /** 出典URL（e-Stat ファイルページ等） */
+  sourceUrl?: string;
+}
+
+/** 魚種ごとの旬（月 1〜12）、地域別 */
+export interface SeasonByRegion {
+  /** 月の配列（1〜12）。最頻＋前後1ヶ月など幅を持たせる場合あり */
+  months: number[];
+  /** 地域タグ */
+  region: SeasonRegion;
+  /** ソース名（自治体名・サイト名） */
+  source: string;
+  /** 出典URL */
+  sourceUrl?: string;
+}
+
+/** 魚種マスタ（名産地・旬・名前正規化の統合結果） */
+export interface FishSpecies {
+  /** 基準名（e-Stat 表記を優先。アプリ表示用） */
+  name: string;
+  /** 名産地（都道府県 Top3〜5） */
+  famousOrigin?: FamousOrigin;
+  /** 地域別の旬。複数地域がある場合は配列 */
+  season?: SeasonByRegion[];
+  /** 一覧用の旬表示（パイプラインにない場合のフォールバック文言） */
+  seasonDisplay?: string;
+  /** 別名（旬カレンダー等の表記）。名前正規化でこの魚にマップされる */
+  aliases?: string[];
+}
+
+/** 名産地・旬データの最終成果物（出典付き） */
+export interface FishSeasonOriginData {
+  /** 生成日時 ISO8601 */
+  generatedAt: string;
+  /** 魚種ごとのデータ */
+  species: FishSpecies[];
+  /** 出典一覧（アプリの出典表示用） */
+  citations: {
+    title: string;
+    url?: string;
+    description?: string;
+  }[];
+}
+
+/** ユーザーが追加した魚介データ（ローカル保存） */
+export interface UserAddedFish {
+  /** 魚介名 */
+  name: string;
+  /** 名産地（都道府県） */
+  prefectures?: string[];
+  /** 旬の表示例（例: 春～夏、10月～2月、通年） */
+  seasonDisplay?: string;
+  /** 追加日時（一覧の並び・識別用） */
+  addedAt?: string;
+}
+
+/** 県別・魚介ごとのユーザー登録（写真最大3枚・星5段階評価） */
+export interface PrefectureFishPhotoRating {
+  prefecture: string;
+  fishName: string;
+  /** 保存した写真のURI（最大3件） */
+  photoUris: string[];
+  /** 1〜5 の評価。未設定時は undefined */
+  rating?: number;
+  /** コメント（任意） */
+  comment?: string;
+}
+
+// ============================================
+// Wagyu (全国ブランド牛制覇)
+// ============================================
+
+/** ブランド牛マスタ（将来: 格付けタグ・複数ブランド対応） */
+export interface WagyuBrand {
+  /** ブランド名 */
+  name: string;
+  /** 都道府県（1県1代表の場合は1要素） */
+  prefecture: string;
+  /** 格付けメモ用（将来表示用。ユーザー入力は rating 側） */
+  gradeTag?: string;
+}
+
+/** 県別・ブランド牛ごとのユーザー登録（写真最大4枚・星5・コメント・部位・格付けメモ） */
+export interface PrefectureWagyuPhotoRating {
+  prefecture: string;
+  wagyuName: string;
+  /** 保存した写真のURI（最大4枚） */
+  photoUris: string[];
+  /** 1〜5 の評価。未設定時は undefined */
+  rating?: number;
+  /** コメント（任意） */
+  comment?: string;
+  /** 部位メモ（任意） */
+  cutMemo?: string;
+  /** 格付けメモ（A5など、任意） */
+  gradeMemo?: string;
+}

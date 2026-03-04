@@ -1,0 +1,131 @@
+{
+  "sources": [
+    {
+      "id": "hokkaido_pref",
+      "region": "北",
+      "name": "北海道お魚図鑑（北海道庁）",
+      "url": "https://www.pref.hokkaido.lg.jp/sr/gid/sr_ske_index.html",
+      "description": "月別の旬の魚リスト。地域タグ: 北。"
+    },
+    {
+      "id": "iwanai",
+      "region": "北",
+      "name": "岩内町 魚カレンダー",
+      "url": "https://www.iwanai-kanko.org/?page_id=1089",
+      "description": "●旬・▲出始め/終わり。地域タグ: 北。"
+    },
+    {
+      "id": "takatsuki_hokkaido",
+      "region": "北",
+      "name": "高槻商店（北海道日高）旬の魚カレンダー",
+      "url": "https://www.takatsuki-shoten.co.jp/calendar.html",
+      "description": "月ごと代表的な旬の魚。地域タグ: 北。"
+    }
+  ],
+  "seasonByFish": [
+    {
+      "name": "サケ",
+      "region": "北",
+      "months": [
+        9,
+        10,
+        11
+      ],
+      "source": "北海道お魚図鑑（北海道庁）",
+      "sourceUrl": "https://www.pref.hokkaido.lg.jp/sr/gid/sr_ske_index.html"
+    },
+    {
+      "name": "ホッケ",
+      "region": "北",
+      "months": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "source": "北海道お魚図鑑（北海道庁）",
+      "sourceUrl": "https://www.pref.hokkaido.lg.jp/sr/gid/sr_ske_index.html"
+    },
+    {
+      "name": "スケソウダラ",
+      "region": "北",
+      "months": [
+        1,
+        2,
+        3,
+        11,
+        12
+      ],
+      "source": "北海道お魚図鑑（北海道庁）",
+      "sourceUrl": "https://www.pref.hokkaido.lg.jp/sr/gid/sr_ske_index.html"
+    },
+    {
+      "name": "ホタテ",
+      "region": "北",
+      "months": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "source": "北海道お魚図鑑（北海道庁）",
+      "sourceUrl": "https://www.pref.hokkaido.lg.jp/sr/gid/sr_ske_index.html"
+    },
+    {
+      "name": "サケ",
+      "region": "北",
+      "months": [
+        9,
+        10
+      ],
+      "source": "岩内町 魚カレンダー",
+      "sourceUrl": "https://www.iwanai-kanko.org/?page_id=1089"
+    },
+    {
+      "name": "ホッケ",
+      "region": "北",
+      "months": [
+        7,
+        8,
+        9
+      ],
+      "source": "岩内町 魚カレンダー",
+      "sourceUrl": "https://www.iwanai-kanko.org/?page_id=1089"
+    },
+    {
+      "name": "秋鮭",
+      "region": "北",
+      "months": [
+        9
+      ],
+      "source": "高槻商店（北海道日高）旬の魚カレンダー",
+      "sourceUrl": "https://www.takatsuki-shoten.co.jp/calendar.html"
+    },
+    {
+      "name": "バフンウニ",
+      "region": "北",
+      "months": [
+        4
+      ],
+      "source": "高槻商店（北海道日高）旬の魚カレンダー",
+      "sourceUrl": "https://www.takatsuki-shoten.co.jp/calendar.html"
+    }
+  ],
+  "citations": [
+    {
+      "title": "北海道お魚図鑑（北海道庁）",
+      "url": "https://www.pref.hokkaido.lg.jp/sr/gid/sr_ske_index.html",
+      "description": "月別の旬の魚リスト。地域タグ: 北。"
+    },
+    {
+      "title": "岩内町 魚カレンダー",
+      "url": "https://www.iwanai-kanko.org/?page_id=1089",
+      "description": "●旬・▲出始め/終わり。地域タグ: 北。"
+    },
+    {
+      "title": "高槻商店（北海道日高）旬の魚カレンダー",
+      "url": "https://www.takatsuki-shoten.co.jp/calendar.html",
+      "description": "月ごと代表的な旬の魚。地域タグ: 北。"
+    }
+  ]
+}

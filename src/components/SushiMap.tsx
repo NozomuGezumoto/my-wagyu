@@ -9,6 +9,7 @@ import { StyleSheet, View, Text, Pressable, Switch, ScrollView } from 'react-nat
 import MapView, { Marker, Region } from 'react-native-maps';
 import ClusteredMapView from 'react-native-map-clustering';
 import { Ionicons } from '@expo/vector-icons';
+import { useRouter } from 'expo-router';
 import BottomSheet, { BottomSheetScrollView, BottomSheetFlatList } from '@gorhom/bottom-sheet';
 import {
   SUSHI_COLORS,
@@ -132,6 +133,7 @@ const ListItem = memo(function ListItem({ shop, isVisited, isWantToGo, onPress }
 });
 
 export default function SushiMap() {
+  const router = useRouter();
   const mapRef = useRef<MapView | null>(null);
   const detailSheetRef = useRef<BottomSheet>(null);
   const listSheetRef = useRef<BottomSheet>(null);
@@ -497,6 +499,12 @@ export default function SushiMap() {
 
       {/* Action buttons */}
       <View style={styles.actionButtonsContainer}>
+        <Pressable 
+          style={styles.actionButton} 
+          onPress={() => router.push('/(tabs)/fish')}
+        >
+          <Ionicons name="fish" size={20} color={SUSHI_COLORS.primary} />
+        </Pressable>
         <Pressable style={styles.actionButton} onPress={handleResetToCenter}>
           <Ionicons name="locate" size={22} color={SUSHI_COLORS.primary} />
         </Pressable>
