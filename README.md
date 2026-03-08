@@ -99,7 +99,9 @@ eas submit --platform ios --profile production
 eas submit --platform android --profile production
 ```
 
-`eas.json` の `submit.production` に、Apple ID・App Store Connect の App ID・Android のサービスアカウントキーなどを設定すると、コマンドで提出まで行えます。
+**iOS 提出**: `eas.json` の `submit.production.ios` に `ascAppId`（App Store Connect の App ID）を設定すると、CI/CD や非対話で提出できます。未設定の場合は `eas submit` 実行時に対話で入力します。`appleId`・`appleTeamId` は環境変数 `EXPO_APPLE_ID` や対話で指定可能です。
+
+**Android 提出**: `submit.production.android` に `serviceAccountKeyPath`（Google サービスアカウントキーの JSON パス）を設定。未設定時は対話で入力。`track` は `internal`（内部テスト）に設定済みです。
 
 ## ディレクトリ構成（抜粋）
 
